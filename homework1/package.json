@@ -1,0 +1,32 @@
+{
+  "name": "homework1",
+  "version": "1.0.0",
+  "description": "This proyect contains the development of the HomeWork #1 Fundamentals for EPAM NodeJS training",
+  "main": "index.js",
+  "scripts": {
+    "task1": "nodemon task1.js",
+    "task2": "nodemon task2.js",
+    "task1:babel": "babel-node task1-babel.js",
+    "task2:babel": "babel-node task2-babel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresGiraldol/nodetraning.git"
+  },
+  "author": "@AndresG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresGiraldol/nodetraning/issues"
+  },
+  "homepage": "https://github.com/AndresGiraldol/nodetraning#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "csvtojson": "^2.0.10",
+    "i": "^0.3.7",
+    "nodemon": "^2.0.20",
+    "npm": "^9.2.0"
+  }
+}
