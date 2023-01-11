@@ -1,0 +1,43 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "This proyect contains the development of the Homework #2 CRUD for EPAM NodeJS training",
+  "main": "index.js",
+  "scripts": {
+    "task1": "nodemon index.ts",
+    "task2": "nodemon index2.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresGiraldol/nodetraning.git"
+  },
+  "author": "@AndresG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresGiraldol/nodetraning/issues"
+  },
+  "homepage": "https://github.com/AndresGiraldol/nodetraning#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "@types/express": "^4.17.15",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "nodemon": "^2.0.20",
+    "prettier-eslint": "^15.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "uuidv4": "^6.2.13"
+  },
+  "dependencies": {
+    "eslint-plugin-prettier": "^4.2.1",
+    "express": "^4.18.2",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.7.0",
+    "prettier": "^2.8.2"
+  }
+}
