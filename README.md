@@ -50,3 +50,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm run task2 // to run task 2
     $ npm run task1:babel // to run task 1 with babel
     $ npm run task2:babel // to run task 2 with babel
+
+- #### HomeWork 2
+##
+    $ npm run task1 // to run task 1
+    $ npm run task2 // to run task 2
