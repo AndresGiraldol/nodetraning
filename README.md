@@ -55,3 +55,13 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ##
     $ npm run task1 // to run task 1
     $ npm run task2 // to run task 2
+
+- ### HomeWok 3 same folder of Homework 2
+
+## Install
+
+1. Start postgres with Docker, with the command `docker-compose up`
+2. Load initial data with the comando `npm run seed:init`
+3. Run the task `npm run task3`
+4. Test the endpoints
+ 
