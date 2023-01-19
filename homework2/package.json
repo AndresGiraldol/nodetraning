@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "task1": "nodemon index.ts",
-    "task2": "nodemon index2.ts"
+    "task2": "nodemon index2.ts",
+    "seed:init": "ts-node scripts/init-data.ts",
+    "task3": "nodemon index3.ts"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
     "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "eslint": "^8.31.0",
@@ -38,6 +41,8 @@
     "express": "^4.18.2",
     "express-joi-validation": "^5.0.1",
     "joi": "^17.7.0",
-    "prettier": "^2.8.2"
+    "pg": "^8.8.0",
+    "prettier": "^2.8.2",
+    "sequelize": "^6.28.0"
   }
 }
