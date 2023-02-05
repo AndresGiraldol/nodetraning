@@ -41,24 +41,44 @@ groupRouter.post("/", async (_req: Request, _res: Response) => {
 });
 
 // UPDATE GROUP
-groupRouter.put("/:id", async (req: Request, res: Response) => {
-  const group = { ...req.body };
+groupRouter.put("/:id", async (_req: Request, _res: Response) => {
+  const group = { ..._req.body };
   try {
-    await groupService.update(group, req.params.id);
-    res.json(group);
+    await groupService.update(group, _req.params.id);
+    _res.json(group);
   } catch (err) {
-    res.status(500).json(err);
+    _res.status(500).json(err);
   }
 });
 
 // DELETE GROUP
-groupRouter.delete("/:id", async (req: Request, res: Response) => {
-  const group = req.params.id;
+groupRouter.delete("/:id", async (_req: Request, _res: Response) => {
+  const group = _req.params.id;
   try {
     await groupService.delete(group);
-    res.json(group);
+    _res.json(group);
   } catch (err) {
-    res.status(500).json(err);
+    _res.status(500).json(err);
   }
 });
+
+// ADD USERS TO A GROUPS
+groupRouter.post(
+  "/:groupId/addUsers",
+  async (_req: Request, _res: Response) => {
+    const groupId = _req.params.groupId;
+    const { usersId } = _req.body;
+
+    try {
+      await groupService.addUsersToGroup(groupId, usersId);
+      _res.json({
+        groupId,
+        usersId,
+      });
+    } catch (err) {
+      console.log(err);
+      _res.status(500).json(err);
+    }
+  }
+);
 export default groupRouter;

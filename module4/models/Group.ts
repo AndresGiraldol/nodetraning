@@ -1,13 +1,6 @@
 import { Model, DataTypes } from "sequelize";
-import sequelize from "./db";
+import sequelize from "./DB";
 
-// enum Permission {
-//   READ = "READ",
-//   WRITE = "WRITE",
-//   DELETE = "DELETE",
-//   SHARE = "SHARE",
-//   UPLOAD_FILES = "UPLOAD_FILES",
-// }
 class Group extends Model {}
 Group.init(
   {

@@ -1,5 +1,5 @@
 import express from 'express';
-import sequelize from './models/db';
+import sequelize from './models/DB';
 import { routerApi } from './routes';
 
 const app = express();
