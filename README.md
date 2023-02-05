@@ -58,6 +58,11 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 - ### HomeWok 3 same folder of Homework 2
 
+- ## HomeWork 4 
+
+ $ npm run serve // to init the server
+ $ npm run seed:init // to populate the inital data
+
 ## Install
 
 1. Start postgres with Docker, with the command `docker-compose up`
